@@ -1,2 +1,2 @@
 insert into burgers (burger_name, devoured)
-values ("Shack Burger", yes), ("Stack Burger", no), ("Smokeshack", yes);
+values ("Shack Burger", 1), ("Stack Burger", 0), ("Smokeshack", 1);
