@@ -3,6 +3,7 @@ var mysql = require("mysql");
 
 var connection;
 
+// Connect to JawsDB if available, otherwise localhost
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -24,3 +25,7 @@ connection.connect(function(err) {
 
   console.log("connected as id " + connection.threadId);
 });
+
+
+// Export MySQL Connection
+module.exports = connection;
