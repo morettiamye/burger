@@ -4,19 +4,13 @@
 
 <div class="container-flex" id="burgers">
 
-    <div class="toEat">
+    <div class="eating">
         <ol>
             {{#each burgers}} {{#unless devoured}}
-            <li> {{burger_name}}<button class="btn btn-secondary btn-sm eat-it" data-id="{{id}}">Eat it!</button></li> {{/unless}} {{/each}}
+            <li> {{burger_name}}<button class="btn btn-secondary btn-sm eat" data-id="{{id}}">Eat it!</button></li> {{/unless}} {{/each}}
         </ol>
     </div>
 
-    <div class="eaten">
-        <ol> {{#each burgers}} {{#if devoured}}
-            <li> {{burger_name}}<button class="btn btn-secondary btn-sm forget-it" data-id="{{id}}">Forget it!</button></li> {{/if}} {{/each}}
-        </ol>
-
-    </div>
 </div>
 
 <section class="container">
